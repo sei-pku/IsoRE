@@ -1,1 +1,5 @@
-# IsoRE
+# Ison
+
+Isomorphic Regresion Testing detects abnormal behaviors of the program under test by creating its variants (i.e., modified programs) instead of generating tests. It is proposed based on the hypothesis that the behaviors of some variants of the program under test can be regarded as the program’s extended behaviors, and thus can also be explored to help detect faults. Based on this hypothesis, when making some identical modifications on two versions of programs, the behaviors of the two modified programs would be the same, unless there are faults (or changes) in the new version. In particular, isomorphic regression testing forces the existing tests to execute the orginally uncovered code by modifying the isomorphic code (i.e., identical code fragments) of two program versions (e.g., negating/removing branch conditions, removing method calls, and mutating variable values). The behaviors1 of the modified programs are then compared to check if abnormal behaviors are induced in the new version. 
+
+Ison (Isomorphic regression testing through Negating) is the first step to implement isomorphic regression testing which generates program variants by negating branch conditions. With Ison, the current tests would be forced to execute the branches that are originally uncovered, and thus can assist in revealing faults.
